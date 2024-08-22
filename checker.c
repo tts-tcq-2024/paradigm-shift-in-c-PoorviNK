@@ -7,7 +7,7 @@ int StateOfCharge(float soc)
     printf("State of Charge out of range!\n");
     return 0;  
   }
-  ChargeRate(chargeRate);
+  
 }
 int ChargeRate(float chargeRate)
 {
@@ -25,6 +25,8 @@ int batteryIsOk(float temperature, float soc, float chargeRate)
     return 0;
   } 
   StateOfCharge(soc);
+  ChargeRate(chargeRate);
+  
   return 1;
 }
 
